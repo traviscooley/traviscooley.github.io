@@ -2,13 +2,13 @@
 
 body {
     font-family: 'Ubuntu', sans-serif;
-    background: #001136;
-    background: linear-gradient(to right, #001136 0%,#001a36 20%,#002730 43%,#081f1d 68%,#223b2b 100%);
+    background: #453726;
+    background: linear-gradient(to left, #453726 0%,#4d2c22 20%,#4a1d1e 48%,#4a1b26 76%,#4a0d2c 100%);
 }
 h2 {
     font-family: 'Anton', sans-serif;
     text-transform: uppercase;
-    color: #0e5a30;
+    color: #c3073f;
 }
 a {
     cursor: pointer;
@@ -21,6 +21,16 @@ a {
     text-transform: uppercase;
     font-size: 20px;
     color: white;
+}
+
+@media (min-width: 1200px) {
+    body {
+        background: #001136;
+        background: linear-gradient(to right, #001136 0%,#001a36 20%,#002730 43%,#081f1d 68%,#223b2b 100%);
+    }
+    h2 {
+    color: #0e5a30;
+    }
 }
 /**/
 
@@ -37,7 +47,7 @@ a {
 }
 .hero-inner img {
     max-height: 200px;
-    border: 3px double #0e5a30;
+    border: 3px double #c3073f;
     margin-top: -100px  
 }
 .hero-inner h1 {
@@ -166,11 +176,17 @@ a {
     font-size: 18px;
 }
 .me-and-my-projects a:hover {
-    text-decoration: underline;
-    color: #1a1a1d;
+    background-color: lightgray;
+    color: #0e5a30;
 }
 .me-and-my-projects p {
     color: white;
+}
+
+@media (min-width: 1200px) {
+    .me-and-my-projects a:hover {
+        color: #c3073f;
+    }
 }
 
     /*Bio*/
@@ -178,8 +194,8 @@ a {
     .about-bio {
         padding-top: 40px;
         padding-bottom: 30px;
-        background: #453726;
-        background: linear-gradient(to left, #453726 0%,#4d2c22 20%,#4a1d1e 48%,#4a1b26 76%,#4a0d2c 100%);
+        background: #001136;
+        background: linear-gradient(to right, #001136 0%,#001a36 20%,#002730 43%,#081f1d 68%,#223b2b 100%);
         color: white;
     }
     .about-bio-info {
@@ -214,6 +230,10 @@ a {
 
     @media (min-width: 1200px) {
 
+        .about-bio {
+            background: #453726;
+            background: linear-gradient(to left, #453726 0%,#4d2c22 20%,#4a1d1e 48%,#4a1b26 76%,#4a0d2c 100%);
+        }
         .project {
             padding-bottom: 0;
             margin-bottom: 60px;
@@ -270,7 +290,7 @@ a {
     font-size: 30px;
 }
 .social a:hover {
-    background-color: #0e5a30;
+    background-color: #c3073f;
     padding: 1px 6px;
     border-radius: 3px;
     font-size: 40px;
@@ -286,7 +306,7 @@ a {
         font-size: 50px;
     }
     .social a:hover {
-        background-color: #c3073f;
+        background-color: #0e5a30;
         font-size: 60px;
     }
 }
