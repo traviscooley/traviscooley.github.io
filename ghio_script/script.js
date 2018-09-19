@@ -24,7 +24,7 @@ $( document ).ready(function() {
         }
       }
     });
-    // Slick Slider Carousel
+  // Slick Slider Carousel
   $('.slider').slick({
     dots: true,
     arrows: false,
