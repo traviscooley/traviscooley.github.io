@@ -125,7 +125,7 @@ a {
 
 .nav-bar {
     position: sticky;
-    top: 0;
+    top: -1px;
     z-index: 1;
     padding-top: 20px;
     padding-bottom: 20px;
