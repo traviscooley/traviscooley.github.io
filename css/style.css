@@ -85,7 +85,7 @@ a {
 
 @media (min-width: 1200px) {
     .hero-img {
-        max-height: 690px;
+        max-height: 645px;
     }
     .hero-inner {
         position: absolute;
