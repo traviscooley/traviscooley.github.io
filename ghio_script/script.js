@@ -19,11 +19,12 @@ $( document ).ready(function() {
           // Only prevent default if animation is actually gonna happen
           event.preventDefault();
           $('html, body').animate({
-            scrollTop: target.offset().top
+            scrollTop: (target.offset().top - 75)
           }, 1000);
         }
       }
     });
+
   // Slick Slider Carousel
   $('.slider').slick({
     dots: true,

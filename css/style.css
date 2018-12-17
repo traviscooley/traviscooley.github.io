@@ -13,15 +13,21 @@ h2 {
 a {
     cursor: pointer;
 }
-.headers {
+.header {
     margin: 0;
     color: white;
 }
-.sub-header {
+.header-sub {
     margin-bottom: 30px;
     text-transform: uppercase;
     font-size: 20px;
     color: white;
+}
+.sub-header {
+    text-align: center;
+    color: rgb(255, 166, 0);
+    font-size: 26px;
+    margin-bottom: 15px;
 }
 
 @media (min-width: 1200px) {
@@ -146,6 +152,7 @@ a {
 .nav-bar a {
     text-decoration: none;
     color: white;
+    padding-bottom: 25px;
 }
 .nav-bar a:hover {
     text-decoration: none;
@@ -153,6 +160,24 @@ a {
 }
 .nav {
     margin-left: 20px;
+}
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+.dropdown-content {
+    display: none;
+    position: absolute;
+    top: 52px;
+    left: -35px;
+    background-color: #242427;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px #0e5a3060;
+    padding: 12px 16px;
+    z-index: 1;
+}
+.dropdown:hover .dropdown-content {
+    display: block;
 }
 
 @media (min-width: 1200px) {
@@ -165,6 +190,10 @@ a {
     }
     .nav {
         margin-left: 40px;
+    }
+    .dropdown-content {
+        top: 57px;
+        box-shadow: 0px 8px 16px 0px #c3073f60;
     }
 }
 /**/
@@ -180,69 +209,62 @@ a {
     font-size: 18px;
 }
 .me-and-my-projects a:hover {
-    background-color: lightgray;
-    color: #0e5a30;
+    background-color: rgb(255, 166, 0);
 }
 .me-and-my-projects p {
     color: white;
 }
 
-@media (min-width: 1200px) {
-    .me-and-my-projects a:hover {
-        color: #c3073f;
-    }
-}
+/*Bio*/
 
-    /*Bio*/
+.about-bio {
+    padding-top: 40px;
+    padding-bottom: 30px;
+    background: #001136;
+    background: linear-gradient(to right, #001136 0%,#001a36 20%,#002730 43%,#081f1d 68%,#223b2b 100%);
+    color: white;
+}
+.about-bio-info {
+    font-size: 16px;
+}
+/**/
+
+/*Projects*/
+.projects {
+    padding-top: 40px;
+}
+.project {
+    padding-bottom: 20px;
+    background-color: #1a1a1d;
+}
+.project ul {
+    margin-top: 20px;
+    padding: 0;
+    list-style: none;
+}
+.project a {
+    margin-right: 10px;
+}
+.project-img {
+    padding: 0;
+}
+.project-info p {
+    font-size: 16px;
+}
+/**/
+
+@media (min-width: 1200px) {
 
     .about-bio {
-        padding-top: 40px;
-        padding-bottom: 30px;
-        background: #001136;
-        background: linear-gradient(to right, #001136 0%,#001a36 20%,#002730 43%,#081f1d 68%,#223b2b 100%);
-        color: white;
-    }
-    .about-bio-info {
-        font-size: 16px;
-    }
-    /**/
-
-    /*Projects*/
-    .projects {
-        padding-top: 40px;
+        background: #453726;
+        background: linear-gradient(to left, #453726 0%,#4d2c22 20%,#4a1d1e 48%,#4a1b26 76%,#4a0d2c 100%);
     }
     .project {
-        padding-bottom: 20px;
+        padding-bottom: 0;
+        margin-bottom: 60px;
         background-color: #1a1a1d;
     }
-    .project ul {
-        margin-top: 20px;
-        padding: 0;
-        list-style: none;
-    }
-    .project a {
-        margin-right: 10px;
-    }
-    .project-img {
-        padding: 0;
-    }
-    .project-info p {
-        font-size: 16px;
-    }
-    /**/
-
-    @media (min-width: 1200px) {
-
-        .about-bio {
-            background: #453726;
-            background: linear-gradient(to left, #453726 0%,#4d2c22 20%,#4a1d1e 48%,#4a1b26 76%,#4a0d2c 100%);
-        }
-        .project {
-            padding-bottom: 0;
-            margin-bottom: 60px;
-            background-color: #1a1a1d;
-        }
-    }
+}
 /**/
 
 /*My Contact*/
@@ -269,6 +291,7 @@ a {
 }
 .contacts a:hover {
     text-decoration: underline;
+    color: rgb(255, 166, 0);
 }
 
 /**/

@@ -28,7 +28,7 @@
                         <div class="hero-border">
                             <img class="img-circle" src="images/head-shot.jpg" alt="">
                             <h1>Travis Cooley</h1>
-                            <p class="sub-header">Junior Developer</p>
+                            <p class="header-sub">Junior Developer</p>
                         </div>
                         <ul>
                             <li><a href="https://www.linkedin.com/in/travis-cooley-a52760169/" target="blank_"><i class="fab fa-linkedin-in"></i></a></li>
@@ -46,7 +46,15 @@
                     <ul>
                         <li><a href="#home">home</a></li>
                         <li class="nav"><a href="#about">about</a></li>
-                        <li class="nav"><a href="#project">project</a></li>
+                        <li class="nav">
+                            <div class="dropdown">
+                                <a href="#project">projects</a>
+                                <div class="dropdown-content">
+                                    <a href="#javascript">JavaScript</a>
+                                    <a href="#html-css">HTML/CSS</a>
+                                </div>
+                            </div>
+                        </li>
                         <li class="nav"><a href="#contact">contact</a></li>
                     </ul>
                 </div>
@@ -58,8 +66,8 @@
             <div class="container">
                 <div class="row">
                     <div class="col-sm-offset-1 col-sm-10">
-                        <h2 class="headers">about me</h2>
-                        <p class="sub-header">the short version</p>
+                        <h2 class="header">about me</h2>
+                        <p class="header-sub">the short version</p>
                     </div>
                     <div class="about-bio-info col-sm-offset-1 col-sm-10">
                         <p>I am Travis Cooley and I just graduated from Brandon High School in May 2018. I am currently a Junior Developer at the Mississippi Coding Academies and will graduate in May of 2019. I know Web Development and Backend such as html, css, bootstrap 3, and python.</p>
@@ -74,10 +82,62 @@
                     <div class="col-sm-offset-1 col-sm-10">
                         <div class="row">
                             <div class="col-sm-12">
-                                <h2 class="headers">projects</h2>
-                                <p class="sub-header">things that i am proud of</p>
+                                <h2 class="header">projects</h2>
+                                <p class="header-sub">things that i am proud of</p>
+                            </div>
+                            <div id="javascript" class="col-sm-12">
+                                <h3 class="sub-header"><strong>JavaScript Projects</strong></h3>
                             </div>
                         </div>
+                        <div class="project row">
+                            <div class="slider project-img col-sm-6">
+                                <div><img src="images/ATM.png" class="img-responsive" alt=""></div>
+                                <div><img src="images/ATM1.png" class="img-responsive" alt=""></div>
+                            </div>
+                            <div class="project-info col-sm-6">
+                                <div>
+                                    <h2>atm</h2>
+                                    <p>I made simple Fast Cash ATM. I used javacript with some front end html, css, and a bootstrap 3 grid to accomplish it.</p>
+                                    <a href="https://traviscooley.github.io/ATM/">View Project</a>
+                                    <a href="https://github.com/traviscooley/ATM">View Code</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="project row">
+                            <div class="slider project-img col-sm-push-6 col-sm-6">
+                                <div><img src="images/Text_Game.png" class="img-responsive" alt=""></div>
+                                <div><img src="images/Text_Game2.png" class="img-responsive" alt=""></div>
+                                <div><img src="images/Text_Game3.png" class="img-responsive" alt=""></div>
+                            </div>
+                            <div class="project-info col-sm-pull-6 col-sm-6">
+                                <div>
+                                    <h2>text based game</h2>
+                                    <p>I started to make a text based game out of one of my favorite game franchises known as <i>"Darksiders"</i>. I made it with javacript with some front end html, css, and a bootstrap 3 grid. (Incomplete)</p>
+                                    <a href="https://traviscooley.github.io/Text-Game-Project/">View Project</a>
+                                    <a href="https://github.com/traviscooley/Text-Game-Project">View Code</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="project row">
+                            <div class="slider project-img col-sm-6">
+                                <div><img src="images/Battle_Ship.png" class="img-responsive" alt=""></div>
+                                <div><img src="images/Battle_Ship2.png" class="img-responsive" alt=""></div>
+                                <div><img src="images/Battle_Ship3.png" class="img-responsive" alt=""></div>
+                            </div>
+                            <div class="project-info col-sm-6">
+                                <div>
+                                    <h2>battle ship game</h2>
+                                    <p>I made a simple battle ship game in javacript with some front end html, css, and a bootstrap 3 grid.</p>
+                                    <a href="https://traviscooley.github.io/Battle-Ship/">View Project</a>
+                                    <a href="https://github.com/traviscooley/Battle-Ship" >View Code</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="html-css" class="row">
+                                <div  class="col-sm-12">
+                                    <h3 class="sub-header"><strong>HTML/CSS Projects</strong></h3>
+                                </div>
+                            </div>
                         <div class="project row">
                             <div class="slider project-img col-sm-6">
                                 <div><img src="images/Bootstrap.png" class="img-responsive" alt=""></div>
@@ -87,7 +147,7 @@
                             <div class="project-info col-sm-6">
                                 <div>
                                     <h2>bootstrap project</h2>
-                                    <p>I attempted to make a webpage design using a bootstrap 3 format.</p>
+                                    <p>I attempted to make a webpage design using a bootstrap 3 grid format.</p>
                                     <a href="https://traviscooley.github.io/bootstrap_project/">View Project</a>
                                     <a href="https://github.com/traviscooley/bootstrap_project">View Code</a>
                                 </div>
@@ -116,7 +176,7 @@
                             <div class="project-info col-sm-6">
                                 <div>
                                     <h2>pizza project</h2>
-                                    <p>I made a pizza webpage using basic html and css, and then later on added bootstrap 3 to format it.</p>
+                                    <p>I made a pizza webpage using basic html and css, and later on added bootstrap 3 to format it. (Incomplete)</p>
                                     <a href="https://traviscooley.github.io/pizza/">View Project</a>
                                     <a href="https://github.com/traviscooley/pizza">View Code</a>
                                 </div>
@@ -132,8 +192,8 @@
             <div class="row">
                 <div class="col-sm-offset-1 col-sm-10">
                     <div class="col-sm-12">
-                        <h2 class="headers">contact</h2>
-                        <p class="sub-header">get in touch</p>
+                        <h2 class="header">contact</h2>
+                        <p class="header-sub">get in touch</p>
                     </div>
                     <div class="col-sm-12">
                         <ul>
