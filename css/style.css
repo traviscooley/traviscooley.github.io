@@ -155,7 +155,7 @@ a {
 .nav-bar a {
     text-decoration: none;
     color: white;
-    padding: 25px 0 25px 0;
+    padding-bottom: 25px;
 }
 .nav-bar a:hover {
     text-decoration: none;
