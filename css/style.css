@@ -149,10 +149,13 @@ a {
     font-size: 20px;
     font-family: 'Anton', sans-serif;
 }
+.nav-bar li:hover i {
+    transform: rotate(180deg);
+}
 .nav-bar a {
     text-decoration: none;
     color: white;
-    padding-bottom: 25px;
+    padding: 25px 0 25px 0;
 }
 .nav-bar a:hover {
     text-decoration: none;
